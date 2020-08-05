@@ -46,4 +46,9 @@ var questionArr = [
     correctAnswer: 3
   }
 ]
-function workplz 
+function question1 () {
+  // console.log (questionArr[0])
+  
+}
+
+question1()
