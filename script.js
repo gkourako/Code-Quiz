@@ -62,14 +62,14 @@ var questionArr = [
 // question1()
 
 
-
+//  Start Screen code
 startBtn.addEventListener("click", setTime) 
 
     function setTime () {
       if (event.target.matches("button")) {
         startScreen.setAttribute("style", "display: none !important")
         quiz.setAttribute("style", "display: block !important")
-
+// Hide quiz from start screen and display when button is clicked
       }
       var timeleft = 75
        var timeInt = setInterval(function (){
