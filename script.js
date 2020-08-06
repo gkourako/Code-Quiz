@@ -1,15 +1,18 @@
 
 // Variables
+var startBtn = document.getElementById("start")
 var answer1 = document.getElementById(answer1)
 var answer2 = document.getElementById(answer2)
 var answer3 = document.getElementById(answer3)
 var answer4 = document.getElementById(answer4)
 var question = []
-
+var timeEl = document.getElementById("time");
+var startScreen = document.querySelector(".start-screen")
+var quiz = document.querySelector(".quiz")
 // Question Variable
 var questionArr = [
 {
-  question: "What car did Brian drive in Fast and Furious",
+  question: "What car did Brian drive in Fast and Furious?",
   answer:"Blue R34",
   answerlist: ["Blue R34", "Yellow Supra", "Black Duragno","Silver R34"],
   correctAnswer: 0
@@ -46,9 +49,41 @@ var questionArr = [
     correctAnswer: 3
   }
 ]
-function question1 () {
-  // console.log (questionArr[0])
+// function question1 () {
+//   alert(questionArr[question])
+//   console.log (questionArr[0])
+//   // console.log (questionArr[1])
+//   // console.log (questionArr[2])
+//   // console.log (questionArr[3])
+//   // console.log (questionArr[4])
   
-}
+// }
 
-question1()
+// question1()
+
+
+
+startBtn.addEventListener("click", setTime) 
+
+    function setTime () {
+      if (event.target.matches("button")) {
+        startScreen.setAttribute("style", "display: none !important")
+        quiz.setAttribute("style", "display: block !important")
+
+      }
+      var timeleft = 75
+       var timeInt = setInterval(function (){
+        timeEl.textContent = "Time: " + timeleft
+        timeleft --;
+
+        if (timeleft === 0) {
+        timeEl.textContent = "";
+        clearInterval(timeInt);
+       }
+      }, 1000);
+    }
+
+var currentQ = 0;
+function buildQuiz() {
+  document.getElementById
+}

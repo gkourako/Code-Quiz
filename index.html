@@ -16,40 +16,42 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <span class="navbar-brand mb-0 h1">View Highscores</span> 
-    <span class="navbar-brand mb-0 h1 text-right"id="time">Time:</span>  
+    <span class="navbar-brand mb-0 h1 float-right"id="time">Time:</span>  
   </a>
 </nav>
-<section class="container">
+<main class="container text-center">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-sm-12  start-screen">
 
       <h2 class="display-2">Test your Fast and Furious knowledge!</h2>
       <p>Get ready to test how much you know about the Fast Saga! This is a timed quiz and there are 5 questions you have to answer.  If you get a question wrong 5 seconds will be deducted from your timer. Try it with your peers and see who can get the highest score! Remember, "It doesn't matter whether you win by an inch or a mile, winning is winning" - Dominic Toretto</p>
       <br>
-      <button type="button" id="answer1" class="btn btn-outline-primary">Start</button>
-      <br>
-
-<!-- Question -->
-
-      <h4 id="questions">Question goes here</h4>
-<!-- Answer 1 -->
-      <br>
-      <button type="button" id="answer1" class="btn btn-outline-primary">Answer 1</button>
-      <br>
-<!-- Answer 2 -->
-      <button type="button" id="answer2" class="btn btn-outline-primary">Answer 2</button>
-      <br>
-<!-- Answer 3 -->
-      <button type="button" id="answer3" class="btn btn-outline-primary">Answer 3</button>
-      <br>
-<!-- Answer 4 -->
-      <button type="button" id="answer4" class="btn btn-outline-primary">Answer 4</button>
+      <button type="button" id="start" class="btn btn-outline-primary">Start Quiz!</button>
     </div>
 
+        <!-- Question -->
+        <article class="container quiz d-none">
+
+          <h4 id="questions">Question goes here</h4>
+          <!-- Answer 1 -->
+          <br>
+          <button type="button" id="answer1" class="btn btn-outline-primary">Answer 1</button>
+          <br>
+          <!-- Answer 2 -->
+          <button type="button" id="answer2" class="btn btn-outline-primary">Answer 2</button>
+          <br>
+          <!-- Answer 3 -->
+          <button type="button" id="answer3" class="btn btn-outline-primary">Answer 3</button>
+          <br>
+          <!-- Answer 4 -->
+          <button type="button" id="answer4" class="btn btn-outline-primary">Answer 4</button>
+          
+        </article>
+  
 
   </div>
 
-</section>
+</main>
 
 
 
