@@ -14,7 +14,7 @@ var questionArr = [
 {
   question: "What car did Brian drive in Fast and Furious?",
   answer:"Blue R34",
-  answerlist: ["Blue R34", "Yellow Supra", "Black Duragno","Silver R34"],
+  answerlist: ["Blue R34", "Yellow Supra", "Black Durango","Silver R34"],
   correctAnswer: 0
   },
 
@@ -49,17 +49,20 @@ var questionArr = [
     correctAnswer: 3
   }
 ]
-// function question1 () {
-//   alert(questionArr[question])
-//   console.log (questionArr[0])
-//   // console.log (questionArr[1])
-//   // console.log (questionArr[2])
-//   // console.log (questionArr[3])
-//   // console.log (questionArr[4])
-  
-// }
+function question1 () {
 
-// question1()
+  var q1 = document.createElement(questionArr[0])
+  console.log(q1)
+  // console.log (questionArr[0])
+  // console.log (questionArr[0])
+  // console.log (questionArr[1])
+  // console.log (questionArr[2])
+  // console.log (questionArr[3])
+  // console.log (questionArr[4])
+  
+}
+
+question1()
 
 
 //  Start Screen code
@@ -83,7 +86,7 @@ startBtn.addEventListener("click", setTime)
       }, 1000);
     }
 
-var currentQ = 0;
-function buildQuiz() {
-  document.getElementById
-}
+// var currentQ = 0;
+// function buildQuiz() {
+//   document.getElementById.
+// }
